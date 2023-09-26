@@ -1,0 +1,24 @@
+{
+  "name": "Machin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:ts": "tsc -w",
+    "start:node": "nodemon dist/index.js",
+    "start": "concurrently \"npm:start:ts\" \"npm:start:node\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.7.0",
+    "concurrently": "^8.2.1",
+    "nodemon": "^3.0.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "csv-parse": "^5.5.0",
+    "fs": "^0.0.1-security",
+    "strip-bom-stream": "^5.0.0"
+  }
+}
