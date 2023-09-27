@@ -5,7 +5,7 @@ import { printObject } from "./src/util";
 const Reader = new CsvReader();
 
 const main = async () => {
-	const csvData = await Reader.readCSVFile('./data/cases_studies_notions.csv');
+	const csvData = await Reader.readCSVFile('./data/cases_studies_notions_no_bom.csv');
 	const parsedData = Reader.parseData(csvData);
 	printObject(parsedData);
 }
