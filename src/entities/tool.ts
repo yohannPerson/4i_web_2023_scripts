@@ -1,9 +1,15 @@
-export class Tool {
+import { MainEntity } from "./mainEntity";
+
+export class Tool extends MainEntity {
 	name: string;
-	logo: string;
+	logo: string = '';
 
 	constructor(name: string) {
+		super();
 		this.name = name;
-		this.logo = '';
+	}
+
+	getIdent = () => {
+		return this.name;
 	}
 }

@@ -1,9 +1,9 @@
 import { Client } from "./client";
 import { Tool } from "./tool";
 import { CaseStudyType } from "./caseStudyType";
+import { MainEntity } from "./mainEntity";
 
-export class CaseStudy {
-	descriptionBanner: string;
+export class CaseStudy extends MainEntity {
 	title: string;
 	bannerPictureUrl: string;
 	printBannerPicture: boolean;
@@ -17,8 +17,8 @@ export class CaseStudy {
 	result: string;
 	pictureList: string[];
 
-	constructor(descriptionBanner: string, title: string, bannerPictureUrl: string, printBannerPicture: boolean, description: string, typeList: CaseStudyType[], client:Client, confidential: boolean, toolList: Tool[], challenge: string, solution:string, result: string, pictureList: string[]) {
-		this.descriptionBanner = descriptionBanner;
+	constructor(title: string, bannerPictureUrl: string, printBannerPicture: boolean, description: string, typeList: CaseStudyType[], client:Client, confidential: boolean, toolList: Tool[], challenge: string, solution:string, result: string, pictureList: string[]) {
+		super();
 		this.title = title;
 		this.bannerPictureUrl = bannerPictureUrl;
 		this.printBannerPicture = printBannerPicture;
@@ -31,5 +31,9 @@ export class CaseStudy {
 		this.solution = solution;
 		this.result = result;
 		this.pictureList = pictureList;
+	}
+
+	getIdent = () => {
+		return this.title;
 	}
 }

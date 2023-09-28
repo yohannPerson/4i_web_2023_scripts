@@ -1,13 +1,15 @@
 import { CsvReader } from "./src/csvReader";
-import { printObject } from "./src/util";
-  
-// Creating an object of the class which is imported
-const Reader = new CsvReader();
+import { printObject } from "./src/utils";
 
 const main = async () => {
-	const csvData = await Reader.readCSVFile('./data/cases_studies_notions_no_bom.csv');
-	const parsedData = Reader.parseData(csvData);
-	printObject(parsedData);
+	const Reader = new CsvReader();
+	const csvData = await Reader.readCSVFile('./data/test.csv');
+	Reader.parseData(csvData);
+	// printObject(Reader.clientsIndustriesList);
+	// printObject(Reader.casesStudiesTypesList);
+	// printObject(Reader.toolsList);
+	// printObject(Reader.clientsList);
+	printObject(Reader.casesStudiesList);
 }
 
 main();
