@@ -1,5 +1,5 @@
 {
-  "name": "Machin",
+  "name": "4i_web_2023_scripts",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -19,6 +19,8 @@
   "dependencies": {
     "csv-parse": "^5.5.0",
     "fs": "^0.0.1-security",
+    "html-to-rtf": "^2.1.0",
+    "node-html-markdown": "^1.3.0",
     "strip-bom-stream": "^5.0.0"
   }
 }

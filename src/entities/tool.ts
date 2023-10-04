@@ -2,7 +2,7 @@ import { MainEntity } from "./mainEntity";
 
 export class Tool extends MainEntity {
 	name: string;
-	logo: string = '';
+	logo = null;
 
 	constructor(name: string) {
 		super();
@@ -11,5 +11,11 @@ export class Tool extends MainEntity {
 
 	getIdent = () => {
 		return this.name;
+	}
+
+	getData = () => {
+		return {
+			name: this.name
+		};
 	}
 }

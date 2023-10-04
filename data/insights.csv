@@ -1,0 +1,363 @@
+Title,Paragraph,"Insight Types",URL
+"Specs and Speed","Most of our clients have a general idea of what their requirements are for their software. In some cases, they have a very clear idea of what they want.
+
+However, when executing a project, <a href=""https://en.wikipedia.org/wiki/Software_requirements_specification"">hundreds if not thousands of details need to be defined</a>. It is close to impossible for a non-professional to do so upfront, as one will tend to overlook most of the questions. But even for a professional, it is very difficult to produce a coherent spec sheet upfront: we noticed that almost all the spec sheets we receive have numerous internal contradictions or omissions, making it impossible to actually execute the project without minor or sometimes even major revisions.
+
+In the next installment of <a href=""https://4idps.com/insights/"">4i Insights</a>, we will describe some tools to improve the process of writing specs. At the moment, please remember this: the better the specs, the faster a project can be executed. Better specs=faster speed!
+
+&nbsp;","Project Management|Software Development|Specs",https://4idps.com/specs-and-speed/
+Prototyping,"Creating a prototype is a great tool for writing good specs, as it creates a visual and tactile interface that makes the product self-explanatory. In addition, we have often experienced that clients’ ideas on what their software is supposed to achieve are well-aligned, while design is more subjective, and can create disagreements. It is best for such disagreements to be resolved at the start of the project, rather than at the end. Prototyping is a great way to make sure that the discussions are efficient, and it forces the discussion on many aspects of the specs which one might not think about without a prototype.
+
+It is much cheaper and less time consuming to fiddle around on a prototype, rather than on a fully developed software product with an integrated and often complex backend.
+
+Some online tools allow for wireframing as well as fully fledged design. The tools we use most are <a href=""https://zeplin.io"">Zeplin</a>, <a href=""https://www.invisionapp.com"">InVision</a>, <a href=""https://www.sketch.com/docs/prototyping/"">Sketch</a>, and <a href=""https://www.adobe.com/tw/creativecloud/buy/students.html?sdid=RBS7NL5Y&amp;mv=search&amp;ef_id=Cj0KCQjwqp-LBhDQARIsAO0a6aIPShdUIyq6G7euDKL9DzthsZayQqq_RQ_vV6BiOBZ-UDLf3_-0oWQaAlhcEALw_wcB:G:s&amp;s_kwcid=AL!3085!3!541624032915!b!!g!!adobe%20photoshop%20student%20download!14398435821!126039577563"">Photoshop</a>. All have their respective advantages and drawbacks, and we use them for different scenarios . Some can be integrated with each other to some extent.
+
+Are you interested in explaining in more detail which tool we use in which case, and why? If so, please <a href=""https://4idps.com/contact/"">let us know</a>, and we will address it in a future newsletter.
+
+In the next issue of Insights, we will address our favourite collaboration tools for software development. Please stay tuned!
+
+&nbsp;","Development Roadmap|Outsourced Team|Prototyping|Software Development",https://4idps.com/prototyping/
+"Notes on planning your software resources","Software is always-changing and always under development. <a href=""https://www.microsoft.com/en-us/microsoft-365/word"">Microsoft word</a> for instance has had a new release every 2-3 years since its inception in 1984, with multiple bug fixes in-between.
+
+So, you need a good resource plan to match your development roadmap. How to do that?
+
+– First and foremost, make sure that someone inside or outside of your company knows how the various parts of the software work together. You want your resources to spend a majority of their time improving your software, and not just on understanding what their predecessor(s) have done. Depending on the technology used and the development process, handing over software to new developers can be time-consuming.
+
+– Secondly, be sure to have a good plan for your development needs, and a good bug reporting system. There are many bug report systems out there for the different needs companies may have, and we have used many of them – let us know if you would like us to point you in the right direction.
+
+– Lastly: discuss the development plan and bug database with your in-house or outsourced development team. If the needs are well-defined, it should be easy for them to estimate the resource needs.
+
+<em>Read more: <a href=""https://4idps.com/custom-software-and-offshore-outsourcing/"" target=""_blank"" rel=""noopener"">Custom software development – Examples and Best Practices</a></em>","Development Roadmap|Project Management|Prototyping|Software Development",https://4idps.com/notes-on-planning-your-software-resources/
+"A brief history of software","<span lang=""EN-US"">Let’s start recapitulate the history of software:</span>
+
+<span lang=""EN-US"">-  </span><span lang=""EN-US"">There are many precursors to modern software. Some concepts such as the abacus (possibly as early as 5,000 years ago) are very ancient, but the first algorithm was devised in the 19<sup>th</sup> century by Charles Babbage / Ada Lovelace. However this was purely theoretical.</span>
+
+<span lang=""EN-US"">-  </span><span lang=""EN-US"">In 1935 Alan Turing wrote the first theory of software, and the first electronic computer, the ENIAC, came into existence in 1946, and was used to calculate artillery firing tables for the US army.</span>
+
+<span lang=""EN-US"">-  </span><span lang=""EN-US"">From 1948 to 1979, various binary codes were developed to perform calculations, and the programming languages Fortran, COBOL and BASIC were developed. The Apollo mission was the first endeavor that depended on software for practical and complex tasks.</span>
+
+<span lang=""EN-US"">-  </span><span lang=""EN-US"">From the 1960’s onwards, minicomputers started to be sold. They were essentially miniaturized mainframes, and came with pre-installed software. Most of the software was stored on cassette tapes and cartridges.</span>
+
+<span lang=""EN-US"">-  </span><span lang=""EN-US"">From the 1980’s to early 2000’s, PC’s came into wider use, with the industry dominated first by Apple and then IBM.</span>
+
+&nbsp;
+
+<u><span lang=""EN-US"">In Taiwan, the computer industry started in 1976</span></u><span lang=""EN-US"">, driven by the local production prowess, and affinity to technology. The expertise grew fast, with Taiwan quickly becoming a critical element in the international supply chains.</span>
+
+<span lang=""EN-US"">The 1980’s and 90’s saw the emergence of Taiwan’s semiconductors industry, which necessitated advanced researchers to develop the coming generations of microchips.</span>
+
+<span lang=""EN-US"">The emergence of Taiwan’s large-scale software industry started in the 1990’s but really took off around 2010, which is incidentally the year in which 4i DPS was founded.</span>
+
+<u><span lang=""EN-US""><b>Taiwan is now such a critical element of the semiconductors industry that the New York Times recently called it “<a href=""https://www.nytimes.com/2020/12/14/opinion/taiwan-computer-chips.html"">pound for pound the most important place in the world</a>”. It has both hardware and software capabilities that are unmatched by any other territory that small.</b></span></u>
+
+<span lang=""EN-US"">With this, we wish you a very successful year of the Ox! And please do check out our <a href=""https://4idps.com//our-clients/"">clients</a> in the high-tech industry.</span>
+
+<span lang=""EN-US"">The 4i team</span>","Outsourced Team|Project Management|Prototyping|Software Development",https://4idps.com/a-brief-history-of-software/
+"Let ideas compete","<strong>Deplatforming - what's the solution?</strong>
+
+<span lang=""EN-US"">You may have heard that some famous and some less famous <a href=""https://apnews.com/article/facebook-ban-trump-3e9a00e791f9806a4d925ec9a2fbe9f3"">people were kicked off their favourite platform</a> over the last few days. Yes, we mean twitter, facebook, and others.</span>
+
+<span lang=""EN-US"">People have different interpretations of the facts, and whether what happened was justified or sensible. This discussion will likely continue for a while.</span>
+
+<span lang=""EN-US"">This much is clear: the loss of access to the portals has an immense impact on the people whom it concerns. It means the disappearance of their public personhood.</span>
+
+<span lang=""EN-US"">What's the solution?</span>
+
+<span lang=""EN-US"">It's actually very simple: everyone should be on more than one portal. Just like we should read more than one newspaper, and consider more than one car brand. The market power of twitter, facebook and the like are bigger than is healthy. The current situation is quite illogical; t</span>he world progresses best through a constant competition of ideas.
+
+<a href=""https://www.forbes.com/sites/abrambrown/2020/06/30/discord-was-once-the-alt-rights-favorite-chat-app-now-its-gone-mainstream-and-scored-a-new-35-billion-valuation/?sh=4ed54e8cb6b2"">Nowadays ideas often have a software aspect to them</a>. That's why we do what we do.
+
+Please make sure to <a href=""https://4idps.com//case-studies/4i_industry-start-ups/"">check out our experience with start-ups</a>.
+
+With this in mind, we wish you a highly successful 2021, and hope to work on your ideas with you!","Project Management|Software Development|Specs",https://4idps.com/let-ideas-compete/
+"Can technology make elections more transparent?","<h2>Election Technology<br><br><a href=""https://www.un.org/en/global-issues/democracy"" target=""_blank"" rel=""noopener"" style=""font-style: inherit; font-weight: inherit; font-size: 16px; background-color: rgb(255, 255, 255);"">Elections are at the core of democracy</a>, and&nbsp;having had the opportunity to work on an international election project in early 2020, here are some insights into the technological landscape.</h2>
+<h2>&nbsp;</h2>
+<h2>Voting technology</h2>
+&nbsp;
+<p>Typically each territory has its own laws governing election equipment, and the voting equipment has to be customized to those laws. The equipment can have various functionalities, such as counting ballots, checking ID’s and biometrical data, issuing voting receipts, etc. In some territories, the customization has to take place on short notice, since the selection of the supplier happens shortly before the election takes place. Therefore, some large vendors of voting equipment essentially consist of teams of engineers with knowledge of voting technology, and production facilities for voting equipment; and each election is a project, in which the modules are assembled and customized to fit the project.</p>
+<h2>Elections could become virtual events in the future<br>&nbsp;</h2>
+<p>In the future, as we start to increasingly use our digital persona, elections could become purely virtual events. After all, some territories already encourage digital tax filing, payments, digital signatures etc. – it is not a big step to imagine some territories advocating purely digital elections, possibly in combination with limited in-person voting opportunities.</p>
+<h2>Digital voting advantages<p></p>
+</h2>
+If it is done properly, digital voting has big advantages: for instance, voters can be given sole access to their (encrypted) voting record on the voting database, thus being able to verify if their vote has been counted.
+<p>The voter database can be audited easily: it would contain the information about who voted, while the vote itself is only accessible by the voter for verification purposes.</p>
+<h2>Blockchain Decentralisation</h2>
+<p></p>
+The <a href=""https://www.ibm.com/topics/what-is-blockchain"" target=""_blank"" rel=""noopener"">Blockchain’s</a> decentralized nature lends itself as a technology for elections, although various approaches are possible, with or without a blockchain component. Several large corporations, for instance, Microsoft, have developed their own approaches; at the moment the largest impediment to the introduction appears to be not technology, but the will of the political system to go ahead.
+&nbsp;
+As a Taiwan-Swiss company, we are particularly interested in the subject of voting and keep abreast of the developments in this field.
+&nbsp;","Outsourced Team|Project Management|Software Development",https://4idps.com/elections-tech/
+"Make sure that you have a sound software maintenance plan","<span style=""text-decoration: underline;""><strong>Software maintenance</strong></span>
+
+<span lang=""EN-US"">Software is not static; it works on a server environment, communicates with other pieces of software, and is subject to new requirements from its users or legislators. In addition, some of your software’s components may themselves undergo updates, or may no longer be supported.</span><span lang=""EN-US"">
+</span>
+
+<b><u><span lang=""EN-US"">Please make sure that you have a person responsible for maintaining your software at all times.</span></u></b><span lang=""EN-US"">
+</span>
+
+<u><span lang=""EN-US"">How do you find / appoint that person or company?</span></u>
+
+<span lang=""EN-US"">1) One efficient way is to get the entity which developed your software, to maintain it. The average app contains more than 50,000 lines of code, and it takes time for a new entity to understand how it all fits together! However, in the medium term, you will probably need to <a href=""https://en.wikipedia.org/wiki/Software_maintenance"">appoint a new entity</a>, due to personnel, availability or other changes.</span><span lang=""EN-US"">
+</span>
+
+<span lang=""EN-US"">2) If a new entity is to maintain your software, please plan ahead, as it could take up to a month or more for a new person to understand the code base and be able to make new commits on it.</span><span lang=""EN-US"">
+</span>
+
+<span lang=""EN-US"">3) Make sure to have a thorough documentation of your software!</span><span lang=""EN-US"">
+</span>
+
+<span lang=""EN-US"">4) Be careful if the entity assigned to maintain your software proposes to redevelop it from scratch instead: redevelopments tend to take longer than anticipated, plus you may run into the same problem again later, if a new entity has to take over. Refactoring could be a better option; we will write more about this in a future newsletter.</span>
+
+Please <span style=""color: #339966;""><a style=""color: #339966;"" href=""https://4idps.com/contact/"">contact us</a> </span>if you want us to give you a software maintenance proposal.","Software maintenance",https://4idps.com/make-sure-that-you-have-a-sound-software-maintenance-plan/
+"Work in the age of Corona","In the age of <a href=""https://en.wikipedia.org/wiki/Coronavirus"">Corona</a>, remote work has become increasingly popular, and even a necessity.
+<div>Most people assume that since programming is done in front of a computer, and Engineers aren’t always the most communicative people anyway :), development is quasi predestined for remote work.</div>
+<div></div>
+<div>However, working in an office does have advantages:</div>
+<div>-  It’s convenient for employees to have a workstation in the office, without having to reserve space at home for their work.</div>
+<div>-  It’s convenient for project managers to be able to “gather their troops” every morning for the daily standup meeting, without having to deal with communication issues (yes, not everyone has a perfect connection 24/7 in their house).</div>
+<div>-  It’s convenient for all of us to visually see who is here and who isn’t, without having to click into a communication software.</div>
+<div>-  It’s convenient for everyone to be able to discuss any issue with their colleague without delay (engineers don’t constantly have their communication tools in front of them) – the ability to discuss an issue “here and now” can end up in efficiency savings.</div>
+<div></div>
+<div>“Convenience” here doesn’t just mean “comfort”: convenience can result in lower bug rates, faster development time, and better resources alignment.</div>
+<div></div>
+<div>Our conclusion: we find a mix of in-office work and work from home ideal. Sometimes it is best for engineers to work from home for a day, so they aren’t disturbed by their colleagues, and can focus on solving some very hairy issues. But much of the time, it’s still more efficient to work from the office (as long as that is possible). This will also apply to your <a href=""https://4idps.com/solutions/"">outsourced team</a> with us.</div>","Outsourced Team|Software Development",https://4idps.com/work-in-the-age-of-corona/
+"Mobile Publishing","<section id=""comp-jv3ek0t7"" class=""_3d64y"">
+<div class=""_1uldx"" data-testid=""columns"">
+<div id=""comp-jv3ek0uj"" class=""_1vNJf"">
+<div id=""bgLayers_comp-jv3ek0uj"" class=""_3wnIc"" data-hook=""bgLayers"">
+<div class=""_3KzuS _3SQN-"" data-testid=""colorUnderlay""></div>
+<div id=""bgMedia_comp-jv3ek0uj"" class=""_2GUhU""><img src=""https://static.wixstatic.com/media/da934b39b32b473f8e2a39b2fa185f48.jpg/v1/fill/w_1792,h_500,al_c,q_85,usm_0.66_1.00_0.01/da934b39b32b473f8e2a39b2fa185f48.jpg"" alt="""" /></div>
+</div>
+</div>
+</div>
+</section>
+<div id=""comp-jv3ej3fl"" class=""_1Q9if"" data-testid=""richTextElement"">
+<p class=""font_7""><span class=""color_22"">4i Tech rolled out its first fully interactive, award-winning mobile publishing software in 2011. The application now runs on iOS and Android, and contains world-class analytics on downloads, reading and member habits. It is being used by clients in Asia and Europe, and has generated in excess of 3 Million issue and app downloads. It is used mainly for magazine and book app publishing.</span></p>
+
+</div>
+<div id=""comp-jvbsoh7c"" class=""XUUsC"" title="""">
+<div class=""xQ_iF"" data-testid=""linkElement""><img src=""https://static.wixstatic.com/media/ec6d06_1d74034f71ae45c3bb284167709d4d31~mv2.gif"" alt=""SBIR"" /></div>
+</div>
+<div id=""comp-jvnie26j"" class=""_1Q9if"" data-testid=""richTextElement"">
+<p class=""font_7""><span class=""color_22"">In addition to our fully interactive publishing solution, we have also developed several html5-based readers for offline and online reading. Those solutions are used by clients in Asia and Europe, and run on Android and iOS devices.</span></p>
+
+</div>
+<section id=""comp-jv3gg9ui"" class=""_3d64y"">
+<div class=""_1uldx"" data-testid=""columns"">
+<div id=""comp-jv3gg9xs"" class=""_1vNJf"">
+<div id=""bgLayers_comp-jv3gg9xs"" class=""_3wnIc"" data-hook=""bgLayers"">
+<div id=""bgMedia_comp-jv3gg9xs"" class=""_2GUhU""></div>
+</div>
+<div class="""" data-mesh-id=""comp-jv3gg9xsinlineContent"" data-testid=""inline-content"">
+<div data-mesh-id=""comp-jv3gg9xsinlineContent-gridContainer"" data-testid=""mesh-container-content"">
+<div id=""comp-jv3ghgqh"" class=""_1Q9if"" data-testid=""richTextElement"">
+<h6 class=""font_2"">Picture Perfect</h6>
+</div>
+<div id=""comp-jv3ghgqv"" class=""_1Q9if"" data-testid=""richTextElement"">
+<ul class=""color_22 font_8"">
+ 	<li>
+<p class=""font_8""><span class=""color_22"">The publication is laid to fit the target device. The design layout can therefore be controlled perfectly on each screen.</span></p>
+</li>
+ 	<li>
+<p class=""font_8""><span class=""color_22"">The publication can be laid out multiple times in order to be well-adapted to multiple screen sizes. Our software recognizes from what device the publication is downloaded, and sends the correct material.</span></p>
+</li>
+ 	<li>
+<p class=""font_8""><span class=""color_22"">This allows for beautiful design and surprising interactive elements, but the production process can be time-consuming if a lot of interactive design elements are chosen.</span></p>
+</li>
+ 	<li>
+<p class=""font_8""><span class=""color_22"">The publications are downloaded to the device, either for free or at a price, and can be read while offline.</span></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id=""comp-jv3gg9y1"" class=""_1vNJf"">
+<div class="""" data-mesh-id=""comp-jv3gg9y1inlineContent"" data-testid=""inline-content"">
+<div data-mesh-id=""comp-jv3gg9y1inlineContent-gridContainer"" data-testid=""mesh-container-content"">
+<div id=""comp-jv3ej3gh"" class=""XUUsC"" title=""""></div>
+<div id=""comp-jv3ej3gq"" class=""XUUsC"" title="""">
+<div class=""xQ_iF"" data-testid=""linkElement""><img class=""alignnone size-medium wp-image-3685"" src=""https://4idps.com//wp-content/uploads/2020/03/Website-pad-1-212x300.png"" alt="""" width=""212"" height=""300"" /><img src=""https://static.wixstatic.com/media/ec6d06_1aa5dc8c6ad64618a0e598217f71e74f~mv2.png/v1/fill/w_129,h_260,al_c,usm_0.66_1.00_0.01/ec6d06_1aa5dc8c6ad64618a0e598217f71e74f~mv2.png"" alt=""Mobile Publishing"" /></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id=""comp-jv3iw0z3"" class=""_3d64y"">
+<div class=""_1uldx"" data-testid=""columns"">
+<div id=""comp-jv3iw10o"" class=""_1vNJf"">
+<div id=""bgLayers_comp-jv3iw10o"" class=""_3wnIc"" data-hook=""bgLayers"">
+<div id=""bgMedia_comp-jv3iw10o"" class=""_2GUhU""></div>
+</div>
+<div class="""" data-mesh-id=""comp-jv3iw10oinlineContent"" data-testid=""inline-content"">
+<div data-mesh-id=""comp-jv3iw10oinlineContent-gridContainer"" data-testid=""mesh-container-content"">
+<div id=""comp-jv3iw10w"" class=""_1Q9if"" data-testid=""richTextElement"">
+<h6 class=""font_2"">HTML5</h6>
+</div>
+<div id=""comp-jv3iw10s"" class=""_1Q9if"" data-testid=""richTextElement"">
+<ul class=""color_22 font_8"">
+ 	<li>
+<p class=""font_8""><span class=""color_22"">The publication is laid out once, and the elements adapt automatically to the screen size on which the publication is read (the design features are comparable to a website).</span></p>
+</li>
+ 	<li>
+<p class=""font_8""><span class=""color_22"">We have various automation tools to simplify the production process.</span></p>
+</li>
+ 	<li>
+<p class=""font_8""><span class=""color_22"">The design can be quite interactive, but there are less possibilities than with the picture perfect solution</span></p>
+</li>
+ 	<li>
+<p class=""font_8""><span class=""color_22"">We have two packages: one allows for the publications to be downloaded to the device (for free or at a price), in which case the publication can be read while offline. The other is meant for online reading.</span></p>
+</li>
+</ul>
+<img class=""alignnone"" style=""font-style: inherit;"" src=""https://static.wixstatic.com/media/ec6d06_db026c0a72a442beb79ab102605cd881~mv2_d_2375_3216_s_2.png/v1/fill/w_302,h_409,al_c,usm_0.66_1.00_0.01/ec6d06_db026c0a72a442beb79ab102605cd881~mv2_d_2375_3216_s_2.png"" alt=""Mobile Publishing"" width=""267"" height=""362"" /><img src=""https://static.wixstatic.com/media/ec6d06_0ebc1eecd3bc477d8f651af91e54b3be~mv2.png/v1/fill/w_130,h_259,al_c,usm_0.66_1.00_0.01/ec6d06_0ebc1eecd3bc477d8f651af91e54b3be~mv2.png"" alt=""Mobile Publishing"" />
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div id=""comp-jv3ej3fq"" class=""_1Q9if"" data-testid=""richTextElement"">
+<h6 class=""font_6"">How to choose which publishing solution is most suitable for you?</h6>
+<p class=""font_7""><span class=""color_22"">The pros and cons of picture perfect and html5-based publishing depend mainly on the visuals of the publication, necessity of integration into existing production processes, and mix of expected reading devices (pad / phone). Please <a href=""https://4idps.com/contact/"">contact us</a> to discuss what solution might be best for you.</span></p>
+
+</div>","Software Development|Software maintenance",https://4idps.com/mobile-publishing/
+"How to assure a successful Salesforce implementation","<h2>How to assure a successful Salesforce implementation?</h2>
+<p>&nbsp;</p>
+<p><img src=""https://4idps.com/wp-content/uploads/2021/11/Screen-Shot-2021-11-02-at-11.53.05-AM.png"" alt=""Salesforce implementation process"" width=""790"" height=""192""></p>
+<p>&nbsp;</p>
+<h2>1. Define the specs<br></h2>
+<br>
+<p>What is to be achieved? Do you just want more clarity in your sales team, or do you want to automate processes? Which ones? What integrations with other software systems are necessary? What statistics do you need? Who will be the users, and how will each of them use it? What additional benefits would you like to get in the future? Can salesforce replace existing company processes (other than sales), and what would be the benefits?<br><br>Having good specs is of critical importance for planning and staffing the project and for a successful <a href=""https://www.salesforce.com/"">Salesforce</a> implementation.<br><br>Our consultants can work with you on defining the specs, as you may need someone with a good knowledge of salesforce to guide you through the system and to understand what is possible and what is not. As a matter of fact, the first point of contact with our clients is often the specs definition, which typically takes just a few days or weeks, depending on the complexity of the installation, the people involved, and how familiar you are with software tools in sales management.</p>
+<h2>2. Set up your in-house Salesforce team</h2>
+<br>
+<p>Setting up your in-house team should consist in the following functions:</p>
+<p><img src=""https://4idps.com/wp-content/uploads/2021/11/Screen-Shot-2021-11-02-at-11.53.44-AM-159x300.png"" alt=""Executive sponsor"" width=""159"" height=""300""> <img src=""https://4idps.com/wp-content/uploads/2021/11/Screen-Shot-2021-11-02-at-11.54.16-AM-158x300.png"" alt=""Project Manager"" width=""158"" height=""300""> <img src=""https://4idps.com/wp-content/uploads/2021/11/Screen-Shot-2021-11-02-at-11.54.45-AM-159x300.png"" alt=""System Administrator"" width=""159"" height=""300""></p>
+<h2></h2>
+<h2><br></h2>
+<h2>3. Locate and prepare the data that is to be migrated to Salesforce</h2>
+<br>
+<p>Data migration is very important so as not to lose your client history, and depending on the existing formats, this can be simple, or a time-consuming endeavor; so it is important to assess this early on.</p>
+<h2>4. Proceed with the implementation</h2>
+<br>
+<p><a href=""https://4idps.com/contact/"">Our consultants</a> will be in the lead, but regular discussions will be necessary to make sure that the system is configured to your full satisfaction.</p>
+<p>&nbsp;5. Train users</p>
+<p>Salesforce is a very powerful platform, but it is critical that it is used correctly in order to avoid data confusion. Our standard installation contains a training module.</p>
+<p>&nbsp;6. Think of the maintenance early</p>
+<p>You may want to change your setup as you use salesforce, and/or need continued training (for instance if you have new employees). Salesforce also has new releases from time to time, which sometimes come with new functionalities that may be useful to you. It is best to have a regular maintenance contract in place right from the start, so as to assure that you are informed early of any observations our consultant may have for you.<br><br>Our regular maintenance contracts contain a once-yearly audit, in which we check how you use the system, and produce a checklist of improvement suggestions.</p>
+<p>We are <a href=""https://4idps.com/salesforce-crm/"" target=""_blank"" rel=""noopener"" style="""">experienced in implementing salesforce</a>, and we know the system well, but several steps are needed on your end as well to make the implementation successful. Ultimately all our projects are a co-operation of our team with yours, and this also applies to salesforce implementations.</p>","Outsourced Team|Project Management|Salesforce|Software maintenance|Specs",https://4idps.com/how-to-assure-a-successful-salesforce-implementation/
+"Oracle Netsuite ERP overview","<span class=""color_22""><a href=""https://www.netsuite.com/portal/home.shtml"">Oracle Netsuite</a> was founded in 1998 as a cloud-based accounting software SAAS business. It was acquired by Oracle in 2016 for US$ 9.3 Bn.</span><img class=""alignnone size-medium wp-image-4245"" src=""https://4idps.com/wp-content/uploads/2021/11/O-NetSuite-SolutionProvider-rgb-300x160.png"" alt=""Oracle Netsuite Solution Provider"" width=""300"" height=""160"" />
+<h5 class=""font_5""><span class=""color_22"">It is the only ERP in the world that has always been exclusively cloud-based. From a client perspective, there are no version releases: the approx. 2 yearly software upgrades are performed centrally for all the worldwide clients, and no work is required on the clients’ side.</span></h5>
+<h5 class=""font_5""><span class=""wixGuard"">​</span></h5>
+<h5 class=""font_5""><span class=""color_22"">The modules include ERP, CRM, E-commerce, PSA (Professional Services Automation), HCM (Human Capital Management), and the ability to manage worldwide subsidiaries, currencies, accounting standards and tax requirements.</span></h5>
+<h5 class=""font_5""><span class=""wixGuard"">​</span></h5>
+<p class=""font_7""><span class=""color_22"">We are a proud Oracle Netsuite partner, and keep training our staff on all the product features.</span></p>
+<p class=""font_7""><span class=""wixGuard"">​</span></p>
+<p class=""font_7""><span class=""color_22"">Please <a href=""https://4idps.com/contact/"">contact us</a> to discuss your ERP needs. Our specialists will be able to advise on differences between Netsuite and other packages, suitability, as well as estimated time and costs for installation and maintenance.</span></p>","ERP|Project Management|Software maintenance",https://4idps.com/oracle-netsuite-erp-overview/
+"Innovating with 4i Tech","<p class=""font_7""><span class=""color_22"">Are you looking for a new tangent of development? New and novel applications? Is your company stuck looking for the next big thing?</span></p>
+<p class=""font_7""><span class=""wixGuard"">​</span></p>
+<p class=""font_7""><span class=""color_22"">Imagine a multicultural team composed of project managers, programmers, designers, authors, and artists coming up with new ideas for your company. Your groundbreaking idea may be closer than you imagined!</span></p>
+<p class=""font_7""><span class=""wixGuard"">​</span></p>
+
+<h6 class=""font_6"">How does it work?</h6>
+<p class=""font_7""><span class=""color_22"">After understanding the unique situation of your company, we put together an appropriate project team that either works with you, or independently works out directions of innovative products for you. <a href=""https://4idps.com/contact/"">Contact us</a> to get the ball rolling.</span></p>","Development Roadmap|Outsourced Team|Project Management|Prototyping|Software Development|Specs",https://4idps.com/innovating-with-4i-tech/
+"Our Philosophy","<h2>Why do we develop and install software?</h2>
+<h5 class=""font_5""><span class=""color_22"">We are passionate about automating software processes. Automated processes decrease error rates and down times, and allow process owners to concentrate on the goals they want to achieve, instead of QA. We like to set such systems up, and learn from each case we are given the chance to execute.</span></h5>
+<p class=""font_7""><span class=""color_22"">We like software to work constantly, like a Swiss clock. In order to optimize the processes, we like to immerse ourselves into the software environments of our clients, and figure out how things could be improved. Our consultants have a wide range of experiences, both in terms of programming languages and modules, so they can quickly get a grasp of the situation and propose improvements. We like to assure that everything works together seamlessly, so that information is available anytime.</span></p>
+<p class=""font_7""><span class=""wixGuard"">​</span><span class=""color_22"">In terms of development, we like to work with standard software modules wherever sensible, as this simplifies maintenance. We prefer cloud solutions. For this reason, we are a partner of salesforce CRM and Netsuite ERP.</span></p>
+
+<h2>Our unique selling position</h2>
+<h5 class=""font_5"">Our highly trained developers can compete with the best in the world! Consequently, the quality of our software development projects is on par with the highest international standards.</h5>
+<h6 class=""font_6"">However, the costs are a fraction of equivalent developments executed in silicon valley and on par with low-cost Asian developer teams, but of significantly higher quality.</h6>
+<p class=""font_7"">Our engineers specialize in mobile and app development, and have also developed several back-end integration tools, social media and streaming media sites. We are experienced in all common programming languages such as Java, PHP, .NET, html5, and cloud technology.</p>
+<p class=""font_7"">Our software modules have won several prices. Being our own client, we understand what our clients expect.</p>
+<p class=""font_7"">When we develop software, we act as if we were the end-user, and do extensive internal quality control before delivering the product to our client. This means that whatever we deliver to you will have been fully tested, saving you a lot of time, and assuring that the product is ready to be rolled out immediately.</p>
+<p class=""font_7"">We also take extensive precautions to assure that all aspects of the software you develop with us are kept strictly confidential.</p>
+<p class=""font_7""><a href=""https://4idps.com/contact/"">Get in touch with us,</a> and you will be positively surprised once you outsource your programming needs to us!</p>","Development Roadmap|Outsourced Team|Project Management|Prototyping|Software Development|Software maintenance|Specs",https://4idps.com/our-philosophy/
+"Why should you get your software developed in Taiwan?","<h2 class=""font_7""><span class=""color_22"">Why should you get your software developed in Taiwan?
+</span></h2>
+<p class=""font_7""><span class=""color_22"">
+Following its rapid development as a production center for hardware in the 1990's, <a href=""https://en.wikipedia.org/wiki/Taiwan"">Taiwan's</a> transformation into a hotbed of software development is less well known. Engineering is the most popular major with over a quarter of all Bachelor's degrees; within this, Information Technology is now the second-most popular one, with over 30,ooo graduates a year. The high standards of Taiwan's technical education system, are further highlighted by its ranking in the Program for International Student Assessment (PISA) average math scores for 15-year-olds, in which Taiwan consistently ranks in the top 5 in the world.</span></p>
+<p class=""font_7""><span class=""color_22"">The transformation from hardware to software Engineering was a natural evolution for the people of Taiwan, who are very attuned to technology and embrace it. Taiwan has one of the highest <a href=""https://www.statista.com/statistics/966613/taiwan-social-media-use-by-platform/"" target=""_blank"" rel=""noopener"">social media penetration</a> in the world, along with the world’s highest internet penetration rates and internet connection speeds. Its long history as a leading technological powerhouse means that technical processes and mindsets have become second nature for the people here. Unlike other Asian economies in which many industries compete for the best graduates, the large majority of the brightest graduates here are very likely to end up in engineering jobs.</span><span class=""color_22""><span class=""wixGuard"">​</span></span></p>
+<p class=""font_7""><span class=""color_22"">Many outsiders continue to be surprised at the fast adoption of new technologies in Taiwan – for instance by the fact that Bitcoin is accepted as a means of payment in more than 3,000 Family Mart convenience stores plus many other locations since 2015, in the process turning Taiwan into a Bitcoin destination. But locals know the main reason behind this – many of the world’s best Bitcoin programmers are actually in Taiwan!</span></p>
+<p class=""font_7""><span class=""color_22"">Compared with other traditional software outsourcing destinations such as India and China, Taiwan benefits from a far higher level of work ethics, unencumbered worldwide internet access, and a very fast, can-do attitude to software development.</span></p>
+<p class=""font_7""><span class=""color_22"">Taiwan has a long way to go as a software center.</span></p>
+<em>Read more on <a href=""https://4idps.com/custome-software-and-offshore-outsourcing/"" target=""_blank"" rel=""noopener"">why Taiwan has become Asia's top destination for offshore outsourcing</a>.</em>","Development Roadmap|Outsourced Team|Project Management|Prototyping|Software Development|Software maintenance|Specs",https://4idps.com/why-should-you-get-your-software-developed-in-taiwan/
+"Happy New Year of the Metaverse!","In 2022 everything is new! While the good things that happened in 2021 have been welcome to the new year, none of the bad things have. Isn’t that a superpower?
+
+One of the good things that I have transitioned over is virtual spaces. While I used to be able to have 3 in-person meetings a day max., I am now able to have 8 or more, without the anguish of traffic jams, bad weather or other imponderables. This allows me to catch up with people easily, to reconnect with friends around the world, to have meaningful discussions with people who are physically somewhere else. It’s not just about productivity, it is about being able to have a natural discussion with people who are somewhere else. I like it.
+
+An even more exciting extension of this is the Metaverse. In the metaverse I can interact with friends and make new acquaintances, but also play games, visit art museums, and visit virtual cities as they are being built. It’s so exciting because it’s new and it is being built in front of our very eyes. I feel privileged to be able to follow it up close, for instance playing the Sandbox using my alpha pass. There will be critics and detractors of this and other new developments, but the space will keep growing because everyone wants it to. It is full of positivity, it is fun and serves a useful purpose. It’s not a coincidence that many of the largest companies are embracing it. It is no longer just the future, it is becoming the present: The Sandbox, which started building its metaverse 3 years earlier than for instance Facebook, generated gross merchandise volume of US$ 70 M in the first WEEK of December alone, and raised US$ 93 M in October in a round led by Softbank.
+
+We at 4i are supporting some of our clients' journeys in the metaverse.",Metaverse,https://4idps.com/metaverse/
+"Government surveillance in times of COVID","<h2>Government surveillance in times of COVID</h2>
+During the COVID crisis, a lot has been said about the invasion of privacy and imposing lockdowns in many countries around the world. It is a real problem if the people who control Governments have the ability to check if their laws are enforced at a granular and individual level, so the concern is justified.
+
+<b></b>It is important to separate practical and theoretical discussions. My basic framework is that
+
+<i>“If a technology exists and is useful, someone somewhere will definitely use it. So you should spend time thinking about what the consequences will be, and how you want to position yourself considering the new tech, as opposed to wondering about theoretical issues”</i>
+
+For instance, when the steam engine was invented, people had a lot of thoughts about this new tech. Some ignored it, some wished that it would disappear. Others took advantage of it. The same happened with electric lights, telephones, smartphones, E-mail, etc. The same has been happening with your data for the past 10+ years, including medical and spending patterns.
+
+<b>So the question is: how do we position ourselves to take advantage of this fact, and how do we avoid all becoming slaves to Governments worldwide?</b>
+
+My take is that data transparency works both ways: Governments have a lot more data about their citizens than before. But the citizens also have a lot more data about their Governments than before. In democracies, it is our duty, as citizens, to look at this data and be informed about what our Governments do. If we do that effectively, and our Governments are therefore held accountable, this restricts their ability to use our own information against us. So everyone wins: Governments win because they are accountable for their actions, and citizens win because by checking how their data is used, they can assure it is not used against them in a nefarious way. And society progresses and improves.
+
+Once again, technology helps us in our daily lives.","Data transparency",https://4idps.com/covid-19-data-transparency/
+"Custom software development - Examples and Best Practices","During the pandemic, many industries have progressively introduced digital transformation in response to changing consumer behavior toward the online channel. Businesses that have embraced digital transformation have found that it not only improves the process but also reduces the cost of doing business.
+
+In this article, we would share with you the custom software development examples which have resulted in driving success in the digital transforming world, and the reasons why Taiwan can be your best destination for outsourcing Software.
+<h2>What is custom software development?</h2>
+<a href=""https://www.ibm.com/topics/custom-software-development"" target=""_blank"" rel=""noopener"">Custom software development</a> is the process of designing, creating, deploying, and maintaining software for a specific set of users, functions, or organizations.
+<h2>Examples of custom software development</h2>
+Customized software development is widely applied in a range of industry fields. We have selected the following examples that were built by 4i Tech and have made the product successful with the company.
+<ul>
+ 	<li style=""font-weight: 400;"" aria-level=""1"">Fintech
+<ul>
+ 	<li style=""font-weight: 400;"" aria-level=""3"">The fintech industry uses a wide array of new technologies such as machine learning and artificial intelligence to reduce labor costs and improve service processes. Our client hopes to automate the credit application process through customized software, and by incorporating machine learning to automate the credit scoring process.</li>
+ 	<li style=""font-weight: 400;"" aria-level=""3"">Solutions: An app was developed for applicants to apply for credits, upload their application data and documents, and follow up on the status of their application. We also integrated a third-party machine learning API that ranks the likelihood of success of the applications on certain metrics and helps our client speed up the service process.</li>
+</ul>
+</li>
+ 	<li>Smart Home
+<ul>
+ 	<li style=""font-weight: 400;"" aria-level=""3"">Hardware integration is another common custom software development case. Our client is in the IoT industry and was looking for building an app to control the connected devices at home and had the APP integrated with the hardware protocols.</li>
+ 	<li style=""font-weight: 400;"" aria-level=""3"">Solution: 4i Tech has developed a customized APP that enables the user to keep track of the status of their devices and control them, turn devices on and off and check the temperature, humidity, etc. The app was developed to the client's specifications and works to the client's full satisfaction.</li>
+</ul>
+</li>
+ 	<li>Video streaming platform
+<ul>
+ 	<li style=""font-weight: 400;"" aria-level=""3"">Digital transformation in the video streaming industry evolves rapidly. Our client is a well-known video and audio streaming manufacturer looking to bring-in multi-tenancy technology to have the same program components shared in a multi-user environment.</li>
+ 	<li style=""font-weight: 400;"" aria-level=""3"">With the built of multitenant architecture, multiple users are able to access from the same platform, and makes it possible to maximize resource and reduce operating costs in the long run.</li>
+</ul>
+</li>
+</ul>
+<h2>Benefits of custom software development?</h2>
+Customized software can better meet the business needs than packaged software, and adjust to the business model when needed. It is true that software is the core of driving the organization to adopt digital transformation and deliver value to its customers. If you are looking for a software services provider for your business, below are some considerations you might look into:
+<ul>
+ 	<li style=""font-weight: 400;"" aria-level=""1"">Technical capabilities - From programming languages, and frameworks, to front-end/back-end tools, working with a full-stack development team can help businesses adapt quickly based on project needs.</li>
+ 	<li>Area of expertise - Usually a company with more industrial experience can rapidly understand the industrial pain point and speed up the development process.</li>
+ 	<li style=""font-weight: 400;"" aria-level=""1"">Talent and quality engineers - Make sure the engineers are skilled and experienced to ensure the highest quality of work is delivered.</li>
+</ul>
+<h2>Will Offshore outsourcing be the right fit for you?</h2>
+With the growing demand for software development, more and more companies are turning to offshore outsourcing and aim for cutting development costs and increase productivity. Taiwan is among Asia's top destinations for offshore outsourcing. Here are a couple of reasons why:
+<ul>
+ 	<li>Highly educated talent
+<ul>
+ 	<li style=""font-weight: 400;"" aria-level=""3"">Every year, more than <a href=""https://en.wikipedia.org/wiki/Engineering_education_in_Taiwan"" target=""_blank"" rel=""noopener"">25% of Taiwanese have a bachelor's degree</a> in engineering, providing businesses an opportunity to leverage top talent.</li>
+</ul>
+</li>
+ 	<li>Thriving IT Market
+<ul>
+ 	<li style=""font-weight: 400;"" aria-level=""2"">Taiwan has a reputation for technological innovation. Big tech companies like <a href=""https://www.forbes.com/sites/ralphjennings/2018/04/04/why-google-ibm-and-microsoft-all-decided-to-expand-in-taiwan-this-year/?sh=1324f82e5c72"" target=""_blank"" rel=""noopener"">Microsoft, IBM, and Google </a>had already expanded their presence to Taiwan and built data centers to be located in East Asia. It also shows the potential for Taiwan to become the next information technology network hub.</li>
+</ul>
+</li>
+ 	<li style=""font-weight: 400;"" aria-level=""1"">Advanced in internet infrastructure
+<ul>
+ 	<li style=""font-weight: 400;"" aria-level=""2"">The advantageous geographical location between east and southeast Asia has made Taiwan become an important center for submarine communication cables, and greatly supports the key growth of Taiwan's reliance on the IT industry.</li>
+</ul>
+</li>
+ 	<li><i>Read more on</i> <a href=""https://4idps.com/why-should-you-get-your-software-developed-in-taiwan/"" target=""_blank"" rel=""noopener""><i>Why should you get your software developed in Taiwan?</i></a></li>
+</ul>
+<h2>Summary</h2>
+Digital transformations are aimed at creating better service processes for customers, and each company has its own unique customer journey, make sure to get a full evaluation before integrating digital technology into your organization. Reach out to the <a href=""https://4idps.com/contact-us/"" target=""_blank"" rel=""noopener"">4i Tech</a> team to get a free consultation, we will be in touch with you shortly with you!","Outsourced Team|Software Development",https://4idps.com/custom-software-and-offshore-outsourcing/
+"Salesforce CRM - Features & Customer Success Story","<h2>What is Salesforce CRM software?</h2><p><br />Salesforce CRM (Customer Relationship Management) is a leading customer relationship software with ingenious features to manage your presales, sales, aftersales and marketing activities. It has cloud computing technology which allows you to use the whole software suite from a browser without having to download it (“SAAS”), and makes it easier to access customer 360 instantly.</p><h2>Salesforce Platform<br /><img src=""https://4idps.com/wp-content/uploads/2022/05/Analysis-Salesforce-APEX-APEX-Visualforce-Lightning-framework-Real-time-collaboration-API-Integration-Chatter-Notification-Rest-API-SOAP-API-Data-Loader-User-Security-Login-IP-Ranges-TSL-Session-1.jpg"" alt="""" width=""1200"" height=""628"" /></h2><ul><li style=""font-weight: 400;"" aria-level=""1""><strong>Analysis</strong>: Users can create and subscribe to reports through a drag-and-drop interface</li><li style=""font-weight: 400;"" aria-level=""1""><strong>API Integration</strong>: Easily integrate with third-party systems and connect with e-commerce ERP software, logistics and warehouse management, etc.</li><li style=""font-weight: 400;"" aria-level=""1""><strong>Data Loader</strong>: Allows you to bulk upload or download of data.</li><li style=""font-weight: 400;"" aria-level=""1""><strong>Salesforce APEX</strong>: Unique programming language that allows internal developers to create Salesforce modules quickly.</li><li style=""font-weight: 400;"" aria-level=""1""><strong>Real-time collaboration</strong>: Built-in work channels to connect users across the organization.</li><li style=""font-weight: 400;"" aria-level=""1""><strong>User Security</strong>: Salesforce itself has stringent security requirements to control login access from users.</li></ul><h2>Sales Cloud: A sales automation software that helps salespeople move through the sales process better and faster. <img style=""font-weight: inherit;"" src=""https://4idps.com/wp-content/uploads/2022/05/Analysis-Salesforce-APEX-APEX-Visualforce-Lightning-framework-Real-time-collaboration-API-Integration-Chatter-Notification-Rest-API-SOAP-API-Data-Loader-User-Security-Login-IP-Ranges-TSL-Session-2.jpg"" alt="""" width=""1200"" height=""628"" /></h2><p> </p><ul><li style=""font-weight: 400;"" aria-level=""1""><strong>Web To Lead</strong>: Embedded code allows you to collect potential customers without having to develop an API, and the data can be integrated with Salesforce.</li><li style=""font-weight: 400;"" aria-level=""1""><strong>Customer Management</strong>: Consolidating company contact info into one place.</li><li style=""font-weight: 400;"" aria-level=""1""><strong>Sales Management</strong>: Have a defined sales process and quotation template(s) ready to use.</li><li style=""font-weight: 400;"" aria-level=""1""><strong>Process Automation</strong>: Automated Salesforce tool that lets you control the order of actions and evaluate the criteria for records.</li><li style=""font-weight: 400;"" aria-level=""1""><strong>Collaboration</strong>: Enables teams to share resources in the most efficient manner when working on the same project.</li><li style=""font-weight: 400;"" aria-level=""1""><strong>Event Management</strong>: Allows business executives to assign tasks and document their work more efficiently.</li></ul><h2>Service Cloud:  Enables service agents to provide fast, personalized, and context-aware customer service.</h2><p><img src=""https://4idps.com/wp-content/uploads/2022/05/Analysis-Salesforce-APEX-APEX-Visualforce-Lightning-framework-Real-time-collaboration-API-Integration-Chatter-Notification-Rest-API-SOAP-API-Data-Loader-User-Security-Login-IP-Ranges-TSL-Session-3.jpg"" alt="""" width=""1200"" height=""628"" /></p><ul><li style=""font-weight: 400;"" aria-level=""1""><strong>Web to Case</strong>: Embedded code allows you to gather customer support requests directly from your company's website and automatically generate new cases in Salesforce.</li><li style=""font-weight: 400;"" aria-level=""1""><strong>Entitlements</strong>: Help service agents to verify whether customers are eligible for support.</li><li style=""font-weight: 400;"" aria-level=""1""><strong>Knowledge base</strong>: Collect and automatically search for SOP articles in the industry, and provide solutions to problems.</li><li style=""font-weight: 400;"" aria-level=""1""><strong>Omni-channel</strong>: Integrate with multiple channels such as websites, community, emails, phone calls, etc.</li><li style=""font-weight: 400;"" aria-level=""1""><strong>Call Center</strong>: After the customer service agent takes the call, the system automatically brings out the message, records the conversation, and sets up a case list for follow-up.</li><li style=""font-weight: 400;"" aria-level=""1""><strong>Live Agent</strong>: When customers ask questions, they will further be assigned to the corresponding agents for processing.</li></ul><h2>CRM Development Services - Success Story</h2> <p><a href=""https://www.thebagbroker.com/"" target=""_blank"" rel=""noopener"">The Bag Broker </a>is a wholesaler of flexible packaging, with offices and warehouses in Australia, Europe, UK, Dubai and Taiwan, it provides fully customizable bags with a variety of materials for the coffee roasters and teabag manufacturers.</p><p>As the business grew, they realized that it was taking too long to calculate the costs of the goods and inventory. As such, The Bag Broker is eager to implement a Salesforce CRM solution to automate and streamline its sales processes.</p><h2>4i Tech helps The Bag Broker import Sales cloud<br /><br /></h2><p><strong>Lead Generation and forecasting</strong>: Visualized charts allow managers to easily see their weekly sales performance and monitor the status of their sales pipelines.</p><p><strong>Optimizing lead conversion</strong>: When leads come in from the website, tasks are automatically generated in Salesforce and assigned to the exclusive agent.</p><p><strong>Automate the purchase order process: </strong>With the help of the Salesforce API, the external suppliers are able to create quotations for the products in Salesforce, greatly reducing the time it takes for the sales quotations to be processed.</p><p>‘’ Salesforce brings together all the scattered data from Outlook and Excel into one place so that you can easily access it.’’ said Holger, The Bag Broker’s Founder &amp; CEO.</p><h2><b>Salesforce Certified Partner </b></h2> <p>4i Tech has been a Salesforce certified partner since 2018, and has implemented Salesforce in a wide variety of industries and use cases. If your organization is considering to use CRM software, <a href=""https://4idps.com/contact-us/"" target=""_blank"" rel=""noopener"">contact 4i Tech experts</a> to help you choose the best one for your business.</p>","Sales cloud|Salesforce|Salesforce service cloud",https://4idps.com/salesforce-crm-features-and-customer-success-story/

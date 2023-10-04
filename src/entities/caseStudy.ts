@@ -3,37 +3,69 @@ import { Tool } from "./tool";
 import { CaseStudyType } from "./caseStudyType";
 import { MainEntity } from "./mainEntity";
 
+const bannerImageId = 11; //161
+
 export class CaseStudy extends MainEntity {
 	title: string;
-	bannerPictureUrl: string;
-	printBannerPicture: boolean;
+	bannerPictureId = '10';
+	printBannerPicture = false;
 	description: string;
-	typeList: CaseStudyType[];
+	typesList: CaseStudyType[];
 	client: Client;
 	confidential: boolean;
 	toolList: Tool[];
-	challenge: string;
-	solution: string;
-	result: string;
-	pictureList: string[];
+	challenge: string = "";
+	solution: string = "";
+	result: string = "";
+	pictureList: string[] = [];
 
-	constructor(title: string, bannerPictureUrl: string, printBannerPicture: boolean, description: string, typeList: CaseStudyType[], client:Client, confidential: boolean, toolList: Tool[], challenge: string, solution:string, result: string, pictureList: string[]) {
+	constructor(title: string, description: string, typesList: CaseStudyType[], client:Client, confidential: boolean, toolList: Tool[], challenge: string, solution:string, result: string) {
 		super();
 		this.title = title;
-		this.bannerPictureUrl = bannerPictureUrl;
-		this.printBannerPicture = printBannerPicture;
 		this.description = description;
-		this.typeList = typeList;
+		this.typesList = typesList;
 		this.client = client;
 		this.confidential = confidential;
 		this.toolList = toolList;
-		this.challenge = challenge;
-		this.solution = solution;
-		this.result = result;
-		this.pictureList = pictureList;
+		if (challenge) {
+			this.challenge = challenge;
+		}
+		
+		if (solution) {
+			this.solution = solution;
+		}
+		
+		if (result) {
+			this.result = result;
+		}
 	}
 
 	getIdent = () => {
 		return this.title;
+	}
+
+	getData = () => {
+		const typesIdList = this.typesList.map((item) => {
+			return item.id;
+		});
+
+		const toolsIdList = this.toolList.map((item) => {
+			return item.id;
+		});
+
+		return {
+			title: this.title,
+			banner_image: this.bannerPictureId,
+			show_banner_image: this.printBannerPicture,
+			description: this.description,
+			case_study_types: typesIdList,
+			client: this.client.id,
+			confidentiality: this.confidential,
+			tools: toolsIdList,
+			challenge: this.challenge,
+			solution: this.solution,
+			result: this.result,
+			images: []
+		};
 	}
 }

@@ -11,4 +11,10 @@ export class CaseStudyType extends MainEntity{
 	getIdent = () => {
 		return this.name;
 	}
+
+	getData = () => {
+		return {
+			name: this.name
+		};
+	}
 }

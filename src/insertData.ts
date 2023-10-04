@@ -2,30 +2,31 @@ import axios from "axios";
 
 import { MainEntity } from "./entities/mainEntity";
 import { EntitiesList } from "./entities/entitiesList";
+import { printObject } from "./utils";
 
 // Define the Strapi API endpoint for creating items in the "tools" collection
-const apiUrl = 'http://dev.4idps.com.tw:5101/api'; // Replace with your Strapi API URL
+// const apiUrl = 'http://dev.4idps.com.tw:5101/api';
+const apiUrl = 'http://127.0.0.1:1337/api';
 
-//TODO Add getData function
 export class InsertData {
 	// Function to create an item in the collection
 	createItem = async (item:MainEntity, collectionName: string) => {
 		let resu = null;
 		try {
-			const response = await axios.post(`${apiUrl}/${collectionName}`, {data:item});
+			const response = await axios.post(`${apiUrl}/${collectionName}`, {data:item.getData()});
 
 			if (response.status === 200) {
-				//printObject(response.data.data);
 				resu = response.data.data.id;
-				console.log(`Created ${collectionName} with ID: ${resu}`);
+				console.log(`Created ${collectionName}:${item.getIdent()} with ID: ${resu}`);
 			} else {
 				console.error('Failed to create item:', response.data);
 			}
 		} catch (error: unknown) {
 			if (error instanceof Error) {
-				console.error('Error creating item:',item, error.message);
+				console.error('Error creating item:', error.message);
+				printObject(item.getData());
 			} else {
-				console.log('Error creating item:',item);
+				console.error('Error creating item:',item);
 			}
 			
 		}
@@ -34,8 +35,17 @@ export class InsertData {
 	}
 
 	createItems =  async (itemsList: EntitiesList) => {
+		let nbCreated = 0;
 		for (const item of itemsList.list) {
-			item.id = await this.createItem(item, itemsList.collectionName);
+			const id = await this.createItem(item, itemsList.collectionName);
+			if (id) {
+				item.id = id;
+				nbCreated++;
+			} else {
+				console.error('No id for this ' + itemsList.collectionName);
+			}
 		}
+
+		return nbCreated;
 	}
 }

@@ -1,18 +1,20 @@
 import { MainEntity } from "./mainEntity";
 
 export class Industry extends MainEntity {
-	label: string;
+	name: string;
 
-	constructor(label: string) {
+	constructor(name: string) {
 		super();
-		this.label = label;
-	}
-
-	compare = (entity1: Industry, entity2: Industry) => {
-		return (entity1.label === entity2.label);
+		this.name = name;
 	}
 
 	getIdent = () => {
-		return this.label;
+		return this.name;
+	}
+
+	getData = () => {
+		return {
+			name: this.name
+		};
 	}
 }

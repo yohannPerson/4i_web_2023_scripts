@@ -4,4 +4,8 @@ export class MainEntity {
 	getIdent = () => {
 		return this.id;
 	}
+
+	getData = () => {
+		return {};
+	}
 }
