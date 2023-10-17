@@ -8,6 +8,7 @@ import { InsightType } from './entities/insightType';
 import { Insight } from './entities/insight';
 import { InsightParagraph } from './entities/insigthComponents';
 import { NodeHtmlMarkdown } from 'node-html-markdown';
+import { Test } from './entities/test';
 
 //Case studies collection names
 const industryCollectionName = "industries";
@@ -18,7 +19,10 @@ const caseStudyCollectionName = "case-studies";
 
 //Insights collection names
 const insightTypeCollectionName = "insight-types";
-const insightCollectionName = "tests"; //insights
+const insightCollectionName = "insights";
+
+//Tests collection names
+const testCollectionName = "tests";
 
 export class ExtractData {
 	// Extract challenge, solution and result from the column
@@ -26,7 +30,7 @@ export class ExtractData {
 		// Split the text using keywords as delimiters
 		const keywords = ['Challenges', 'Challenge', 'Solution', 'Result'];
 
-		const pattern = new RegExp(`(${keywords.map(keyword => (keyword)).join('|')}):`, 'g');
+		const pattern = new RegExp(`(${keywords.map(keyword => (keyword)).join('|')}):?`, 'g');
 
 		const sections = info.split(pattern).filter(section => section.trim() !== '');
 
@@ -132,7 +136,8 @@ export class ExtractData {
 			}else if (!currentClient) {
 				console.error('Impossible to create case study : ' + item['Name'] + ' because no client');
 			} else {
-				const info = this.extractInfo(item['Challenges, solutions and results EN']);
+				const infoEN = this.extractInfo(item['Challenges, solutions and results EN']);
+				const infoCN = this.extractInfo(item['Challenges, solutions and results CN']);
 
 				let title = '';
 				let confidential = false;
@@ -149,7 +154,7 @@ export class ExtractData {
 				}
 
 				if (title !== '') {
-					const newCaseStudy = new CaseStudy(title, item['Summary EN'], currentCaseStudyTypeList, currentClient, confidential, currentToolList, info.Challenge, info.Solution, info.Result);
+					const newCaseStudy = new CaseStudy(title, item['Summary EN'], item['Summary CN'], currentCaseStudyTypeList, currentClient, confidential, currentToolList, infoEN.Challenge, infoCN.Challenge, infoEN.Solution, infoCN.Solution, infoEN.Result, infoCN.Result);
 					casesStudiesList.add(newCaseStudy);
 				} else {
 					console.error('Impossible to create case study : ' + item['Name'] + ' because no title');
@@ -193,6 +198,20 @@ export class ExtractData {
 		return {
 			insightTypeList: insightTypesList,
 			insightList: insightsList
+		}
+	}
+
+	parseTest = () => {
+		const testsList = new EntitiesList(testCollectionName);
+
+		const test1 = new Test('test 1 englisgh', 'test 1 chinese');
+		const test2 = new Test('test 2 englisgh', 'test 1 chinese');
+
+		testsList.add(test1);
+		testsList.add(test2);
+
+		return {
+			testsList: testsList
 		}
 	}
 }

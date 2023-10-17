@@ -3,40 +3,57 @@ import { Tool } from "./tool";
 import { CaseStudyType } from "./caseStudyType";
 import { MainEntity } from "./mainEntity";
 
-const bannerImageId = 11; //161
+const bannerImageId = 161;
 
 export class CaseStudy extends MainEntity {
 	title: string;
-	bannerPictureId = '10';
+	bannerPictureId = bannerImageId;
 	printBannerPicture = false;
-	description: string;
+	descriptionEN: string;
+	descriptionCN: string;
 	typesList: CaseStudyType[];
 	client: Client;
 	confidential: boolean;
 	toolList: Tool[];
-	challenge: string = "";
-	solution: string = "";
-	result: string = "";
+	challengeEN: string = "";
+	challengeCN: string = "";
+	solutionEN: string = "";
+	solutionCN: string = "";
+	resultEN: string = "";
+	resultCN: string = "";
 	pictureList: string[] = [];
 
-	constructor(title: string, description: string, typesList: CaseStudyType[], client:Client, confidential: boolean, toolList: Tool[], challenge: string, solution:string, result: string) {
+	constructor(title: string, descriptionEN: string, descriptionCN: string, typesList: CaseStudyType[], client:Client, confidential: boolean, toolList: Tool[], challengeEN: string, challengeCN:string, solutionEN:string, solutionCN:string, resultEN: string, resultCN:string) {
 		super();
 		this.title = title;
-		this.description = description;
+		this.descriptionEN = descriptionEN;
+		this.descriptionCN = descriptionCN;
 		this.typesList = typesList;
 		this.client = client;
 		this.confidential = confidential;
 		this.toolList = toolList;
-		if (challenge) {
-			this.challenge = challenge;
+		if (challengeEN) {
+			this.challengeEN = challengeEN;
+		}
+
+		if (challengeCN) {
+			this.challengeCN = challengeCN;
 		}
 		
-		if (solution) {
-			this.solution = solution;
+		if (solutionEN) {
+			this.solutionEN = solutionEN;
+		}
+
+		if (solutionCN) {
+			this.solutionCN = solutionCN;
 		}
 		
-		if (result) {
-			this.result = result;
+		if (resultEN) {
+			this.resultEN = resultEN;
+		}
+
+		if (resultCN) {
+			this.resultCN = resultCN;
 		}
 	}
 
@@ -44,7 +61,7 @@ export class CaseStudy extends MainEntity {
 		return this.title;
 	}
 
-	getData = () => {
+	getData = (lang='en') => {
 		const typesIdList = this.typesList.map((item) => {
 			return item.id;
 		});
@@ -53,19 +70,40 @@ export class CaseStudy extends MainEntity {
 			return item.id;
 		});
 
-		return {
-			title: this.title,
-			banner_image: this.bannerPictureId,
-			show_banner_image: this.printBannerPicture,
-			description: this.description,
-			case_study_types: typesIdList,
-			client: this.client.id,
-			confidentiality: this.confidential,
-			tools: toolsIdList,
-			challenge: this.challenge,
-			solution: this.solution,
-			result: this.result,
-			images: []
-		};
+		if (lang === 'zh') {
+			return {
+				title: this.title,
+				banner_image: this.bannerPictureId,
+				show_banner_image: this.printBannerPicture,
+				description: this.descriptionCN,
+				case_study_types: typesIdList,
+				client: this.client.id,
+				confidentiality: this.confidential,
+				tools: toolsIdList,
+				challenge: this.challengeCN,
+				solution: this.solutionCN,
+				result: this.resultCN,
+				images: [],
+				locale:'zh'
+			};
+		} else {
+			return {
+				title: this.title,
+				banner_image: this.bannerPictureId,
+				show_banner_image: this.printBannerPicture,
+				description: this.descriptionEN,
+				case_study_types: typesIdList,
+				client: this.client.id,
+				confidentiality: this.confidential,
+				tools: toolsIdList,
+				challenge: this.challengeEN,
+				solution: this.solutionEN,
+				result: this.resultEN,
+				images: [],
+				locale:'en'
+			};
+		}
+
+		
 	}
 }

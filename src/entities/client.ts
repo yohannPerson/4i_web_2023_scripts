@@ -1,8 +1,7 @@
 import { Industry } from "./industry";
 import { MainEntity } from "./mainEntity";
 
-
-const logoId = '10'; //160
+const logoId = '160';
 
 export class Client extends MainEntity {
 	name: string;
@@ -33,5 +32,4 @@ export class Client extends MainEntity {
 			country: this.country
 		};
 	}
-	
 }

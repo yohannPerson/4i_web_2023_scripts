@@ -5,7 +5,7 @@ export class MainEntity {
 		return this.id;
 	}
 
-	getData = () => {
+	getData = (lang?:string) => {
 		return {};
 	}
 }

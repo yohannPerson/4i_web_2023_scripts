@@ -6,8 +6,8 @@ export class Insight extends MainEntity {
 	title: string;
 	date = '2023-04-10';
 	bannerPicture = null;
-	content: InsightParagraph[] = [];
-	image = '11';
+	content:InsightParagraph[] = [];
+	image = '160';
 	insightTypeList:InsightType[] = [];
 
 	constructor(title: string, content: InsightParagraph[], insightTypeList:InsightType[]) {
@@ -16,8 +16,6 @@ export class Insight extends MainEntity {
 		this.content = content;
 		this.insightTypeList = insightTypeList;
 	}
-
-
 
 	getIdent = () => {
 		return this.title;
@@ -35,7 +33,7 @@ export class Insight extends MainEntity {
 		return {
 			title: this.title,
 			published: this.date,
-			//elements: contentData,
+			elements: contentData,
 			image: this.image,
 			insight_types: listInsightTypes
 		};
