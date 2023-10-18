@@ -1,14 +1,21 @@
-import { Industry } from './entities/industry';
-import { Client } from './entities/client';
-import { CaseStudyType } from './entities/caseStudyType';
-import { Tool } from './entities/tool';
-import { CaseStudy } from './entities/caseStudy';
-import { EntitiesList } from './entities/entitiesList';
-import { InsightType } from './entities/insightType';
-import { Insight } from './entities/insight';
-import { InsightParagraph } from './entities/insigthComponents';
+import { IndustryEntity } from './entities/industry/entity';
+import { ClientEntity } from './entities/client/entity';
+import { CaseStudyTypeEntity } from './entities/caseStudyType/entity';
+import { ToolEntity } from './entities/tool/entity';
+import { CaseStudyEntity } from './entities/caseStudy/entity';
+import { ParentsList } from './entities/parentsList';
+import { InsightParagraph } from './entities/insight/insigthComponents';
 import { NodeHtmlMarkdown } from 'node-html-markdown';
-import { Test } from './entities/test';
+// import { Test } from './entities/test';
+import { IndustryParent } from './entities/industry/parent';
+import { CaseStudyTypeParent } from './entities/caseStudyType/parent';
+import { ToolParent } from './entities/tool/parent';
+import { ClientParent } from './entities/client/parent';
+import { CaseStudyParent } from './entities/caseStudy/parent';
+import { InsightTypeParent } from './entities/insightType/parent';
+import { InsightTypeEntity } from './entities/insightType/entity';
+import { InsightParent } from './entities/insight/parent';
+import { InsightEntity } from './entities/insight/entity';
 
 //Case studies collection names
 const industryCollectionName = "industries";
@@ -23,6 +30,9 @@ const insightCollectionName = "insights";
 
 //Tests collection names
 const testCollectionName = "tests";
+
+//Lang local list
+const langLocalList = ['zh', 'fr', 'de', 'ja'];
 
 export class ExtractData {
 	// Extract challenge, solution and result from the column
@@ -62,21 +72,28 @@ export class ExtractData {
 	}
 
 	parseCaseStudiesData = (data:any) => {
-		const clientsIndustriesList = new EntitiesList(industryCollectionName);
-		const casesStudiesTypesList = new EntitiesList(caseStudyTypeCollectionName);
-		const toolsList = new EntitiesList(toolsCollectionName);
-		const clientsList = new EntitiesList(clientsCollectionName);
-		const casesStudiesList = new EntitiesList(caseStudyCollectionName);
+		const clientsIndustriesList = new ParentsList(industryCollectionName);
+		const casesStudiesTypesList = new ParentsList(caseStudyTypeCollectionName);
+		const toolsList = new ParentsList(toolsCollectionName);
+		const clientsList = new ParentsList(clientsCollectionName);
+		const casesStudiesList = new ParentsList(caseStudyCollectionName);
 
 		data.forEach((item:any) => {
 			// Create industry list
-			const currentIndustryList:Industry[] = [];
+			const currentIndustryList:IndustryParent[] = [];
 			if (item['Industry'] && item['Industry'] !== '') {
 				const industriesDataList = item['Industry'].split(', ');
 				industriesDataList.forEach((industry:string) => {
-					const newIndustry = new Industry(industry);
+					const mainEntity = new IndustryEntity(industry);
+					const newIndustry = new IndustryParent(mainEntity);
+
+					langLocalList.forEach((lang)=> {
+						const newModuleIndustry = new IndustryEntity(industry);
+						newIndustry.addModule(newModuleIndustry, lang);
+					});
+
 					const industryFind = clientsIndustriesList.add(newIndustry);
-					if (industryFind !== null && industryFind instanceof Industry) {
+					if (industryFind !== null && industryFind instanceof IndustryParent) {
 						currentIndustryList.push(industryFind);
 					} else {
 						currentIndustryList.push(newIndustry);
@@ -86,13 +103,20 @@ export class ExtractData {
 			
 
 			// Create case study type list
-			const currentCaseStudyTypeList:CaseStudyType[] = [];
+			const currentCaseStudyTypeList:CaseStudyTypeParent[] = [];
 			if (item['Type'] && item['Type'] !== '') {
 				const caseStudyTypeDataList = item['Type'].split(', ');
 				caseStudyTypeDataList.forEach((type:string) => {
-					const newType = new CaseStudyType(type);
+					const mainEntity = new CaseStudyTypeEntity(type);
+					const newType = new CaseStudyTypeParent(mainEntity);
+
+					langLocalList.forEach((lang)=> {
+						const newModuleType = new CaseStudyTypeEntity(type);
+						newType.addModule(newModuleType, lang);
+					});
+
 					const typeFind = casesStudiesTypesList.add(newType);
-					if (typeFind !== null && typeFind instanceof CaseStudyType) {
+					if (typeFind !== null && typeFind instanceof CaseStudyTypeParent) {
 						currentCaseStudyTypeList.push(typeFind);
 					} else {
 						currentCaseStudyTypeList.push(newType);
@@ -101,13 +125,15 @@ export class ExtractData {
 			}
 
 			// Create tool list
-			const currentToolList:Tool[] = [];
+			const currentToolList:ToolParent[] = [];
 			if (item['Tech'] && item['Tech'] !== '') {
 				const toolDataList = item['Tech'].split(', ');
 				toolDataList.forEach((toolName:string) => {
-					const newTool = new Tool(toolName);
+					const mainEntity = new ToolEntity(toolName);
+					const newTool = new ToolParent(mainEntity);
+
 					const toolFind = toolsList.add(newTool);
-					if (toolFind !== null && toolFind instanceof Tool) {
+					if (toolFind !== null && toolFind instanceof ToolParent) {
 						currentToolList.push(toolFind);
 					} else {
 						currentToolList.push(newTool);
@@ -116,20 +142,28 @@ export class ExtractData {
 			}
 
 			// Create new client
-			let currentClient = null;
+			let currentClient:ClientParent|null = null;
 			if (!item['Name']) {
 				console.error('Impossible to create client : ' + item['Name'] + ' because no Name');
 			}else if (!item['Country']) {
 				console.error('Impossible to create client : ' + item['Name'] + ' because no country');
 			} else {
-				currentClient = new Client(item['Name'], currentIndustryList, item['Country']);
-				const clientFind = clientsList.add(currentClient);
-				if (clientFind !== null && clientFind instanceof Client) {
+				const mainEntity = new ClientEntity(item['Name'], item['Country']);
+				const newClient = new ClientParent(mainEntity, currentIndustryList);
+
+				langLocalList.forEach((lang)=> {
+					const newModuleClient = new ClientEntity(item['Name'], item['Country']);
+					newClient.addModule(newModuleClient, lang);
+				});
+
+				const clientFind = clientsList.add(newClient);
+				if (clientFind !== null && clientFind instanceof ClientParent) {
 					currentClient = clientFind;
+				} else {
+					currentClient = newClient;
 				}
 			}
 			
-
 			// Create the case study
 			if (!item['Summary EN']) {
 				console.error('Impossible to create case study : ' + item['Name'] + ' because no summary EN');
@@ -154,13 +188,30 @@ export class ExtractData {
 				}
 
 				if (title !== '') {
-					const newCaseStudy = new CaseStudy(title, item['Summary EN'], item['Summary CN'], currentCaseStudyTypeList, currentClient, confidential, currentToolList, infoEN.Challenge, infoCN.Challenge, infoEN.Solution, infoCN.Solution, infoEN.Result, infoCN.Result);
+					const mainEntity = new CaseStudyEntity(title, item['Summary EN'], confidential, infoEN.Challenge, infoEN.Solution, infoEN.Result);
+					const newCaseStudy = new CaseStudyParent(mainEntity, currentCaseStudyTypeList, currentClient, currentToolList);
+
+					langLocalList.forEach((lang)=> {
+						let summary = item['Summary EN'];
+						let challenge = infoEN.Challenge;
+						let solution = infoEN.Solution;
+						let result = infoEN.Result;
+
+						if (lang === 'zh') {
+							summary = item['Summary CN'];
+							challenge = infoCN.Challenge;
+							solution = infoCN.Solution;
+							result = infoCN.Result;
+						}
+						const newModuleCaseStudy = new CaseStudyEntity(title, summary, confidential, challenge, solution, result);
+						newCaseStudy.addModule(newModuleCaseStudy, lang);
+					});
 					casesStudiesList.add(newCaseStudy);
 				} else {
 					console.error('Impossible to create case study : ' + item['Name'] + ' because no title');
 				}
 			}
-		})
+		});
 
 		return {
 			clientsIndustriesList: clientsIndustriesList,
@@ -172,17 +223,24 @@ export class ExtractData {
 	}
 
 	parseInsightsData = (data:any) => {
-		const insightTypesList = new EntitiesList(insightTypeCollectionName);
-		const insightsList = new EntitiesList(insightCollectionName);
+		const insightTypesList = new ParentsList(insightTypeCollectionName);
+		const insightsList = new ParentsList(insightCollectionName);
 
 		data.forEach((item:any) => {
-			const currentTypeList:InsightType[] = [];
+			const currentTypeList:InsightTypeParent[] = [];
 			if (item['Insight Types'] && item['Insight Types'] !== '') {
 				const insightTypeDataList = item['Insight Types'].split('|');
 				insightTypeDataList.forEach((type:string) => {
-					const newType = new InsightType(type);
+					const mainEntity = new InsightTypeEntity(type);
+					const newType = new InsightTypeParent(mainEntity);
+
+					langLocalList.forEach((lang)=> {
+						const newModuleType = new InsightTypeEntity(type);
+						newType.addModule(newModuleType, lang);
+					});
+					
 					const typeFind = insightTypesList.add(newType);
-					if (typeFind !== null && typeFind instanceof InsightType) {
+					if (typeFind !== null && typeFind instanceof InsightTypeParent) {
 						currentTypeList.push(typeFind);
 					} else {
 						currentTypeList.push(newType);
@@ -191,7 +249,13 @@ export class ExtractData {
 			}
 
 			const newParagraph = new InsightParagraph(NodeHtmlMarkdown.translate(item['Paragraph']));
-			const newInsight = new Insight(item['Title'], [newParagraph], currentTypeList);
+
+			const mainEntity = new InsightEntity(item['Title'], [newParagraph]);
+			const newInsight = new InsightParent(mainEntity, currentTypeList);
+			langLocalList.forEach((lang)=> {
+				const newModuleInsight = new InsightEntity(item['Title'], [newParagraph]);
+				newInsight.addModule(newModuleInsight, lang);
+			}); 
 			insightsList.add(newInsight);
 		});
 
@@ -201,17 +265,17 @@ export class ExtractData {
 		}
 	}
 
-	parseTest = () => {
-		const testsList = new EntitiesList(testCollectionName);
+	// parseTest = () => {
+	// 	const testsList = new EntitiesList(testCollectionName);
 
-		const test1 = new Test('test 1 englisgh', 'test 1 chinese');
-		const test2 = new Test('test 2 englisgh', 'test 1 chinese');
+	// 	const test1 = new Test('test 1 englisgh', 'test 1 chinese');
+	// 	const test2 = new Test('test 2 englisgh', 'test 1 chinese');
 
-		testsList.add(test1);
-		testsList.add(test2);
+	// 	testsList.add(test1);
+	// 	testsList.add(test2);
 
-		return {
-			testsList: testsList
-		}
-	}
+	// 	return {
+	// 		testsList: testsList
+	// 	}
+	// }
 }

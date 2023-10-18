@@ -1,14 +1,14 @@
-import { MainEntity } from "./mainEntity";
+import { MainParent } from "./mainParent";
 
-export class EntitiesList {
+export class ParentsList {
 	collectionName: string;
-	list: MainEntity[] = [];
+	list: MainParent[] = [];
 
 	constructor(collectionName: string) {
 		this.collectionName = collectionName;
 	}
 
-	add = (item: MainEntity) => {
+	add = (item: MainParent) => {
 		const result = this.list.filter((current) => {
 			return (current.getIdent() === item.getIdent());
 		});

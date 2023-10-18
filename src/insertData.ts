@@ -1,8 +1,9 @@
 import axios from "axios";
 
 import { MainEntity } from "./entities/mainEntity";
-import { EntitiesList } from "./entities/entitiesList";
 import { printObject } from "./utils";
+import { ParentsList } from "./entities/parentsList";
+import { MainParent } from "./entities/mainParent";
 
 // Define the Strapi API endpoint for creating items in the "tools" collection
 const apiUrl = 'http://dev.4idps.com.tw:5101/api';
@@ -10,7 +11,7 @@ const apiUrl = 'http://dev.4idps.com.tw:5101/api';
 
 export class InsertData {
 	// Function to create an item in the collection
-	createItem = async (item:MainEntity, collectionName: string) => {
+	createItem = async (item:MainParent, collectionName: string) => {
 		let resu = null;
 		try {
 			const response = await axios.post(`${apiUrl}/${collectionName}`, {data:item.getData()});
@@ -34,27 +35,11 @@ export class InsertData {
 		return resu;
 	}
 
-	createItems =  async (itemsList: EntitiesList) => {
-		let nbCreated = 0;
-		for (const item of itemsList.list) {
-			const id = await this.createItem(item, itemsList.collectionName);
-
-			if (id) {
-				item.id = id;
-				nbCreated++;
-			} else {
-				console.error('No id for this ' + itemsList.collectionName);
-			}
-		}
-
-		return nbCreated;
-	}
-
-	createLocalItem = async (item:MainEntity, collectionName: string, lang:string) => {
+	createLocalItem = async (item:MainParent, collectionName: string, lang:string, idMainEntity: string) => {
 		let resu = null;
-		// console.log(`${apiUrl}/${collectionName}/${item.id}/localizations`);
+		
 		try {
-			const response = await axios.post(`${apiUrl}/${collectionName}/${item.id}/localizations`, item.getData(lang));
+			const response = await axios.post(`${apiUrl}/${collectionName}/${idMainEntity}/localizations`, item.getData(lang));
 
 			if (response.status === 200) {
 				resu = response.data.id;
@@ -75,15 +60,25 @@ export class InsertData {
 		return resu;
 	}
 
-	createItemsLocal = async (itemsList: EntitiesList, lang:string) => {
+	createItems =  async (itemsList: ParentsList) => {
 		let nbCreated = 0;
 		for (const item of itemsList.list) {
-			const id = await this.createLocalItem(item, itemsList.collectionName, lang);
+			const id = await this.createItem(item, itemsList.collectionName);
 
 			if (id) {
+				item.mainEntity.id = id;
 				nbCreated++;
 			} else {
-				console.error('No id for this locale ' + itemsList.collectionName);
+				console.error('No id for this ' + itemsList.collectionName);
+			}
+
+			for (const [lang, entity] of Object.entries(item.moduleList)) {
+				const idLocal = await this.createLocalItem(item, itemsList.collectionName, lang, id);
+				if (idLocal) {
+					entity.id = idLocal;
+				} else {
+					console.error('No id for this local ' + itemsList.collectionName);
+				}
 			}
 		}
 

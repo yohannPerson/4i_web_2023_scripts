@@ -1,11 +1,15 @@
 export class MainEntity {
-	id:string = ''
-
+	id:string = '';
+	
 	getIdent = () => {
 		return this.id;
 	}
 
-	getData = (lang?:string) => {
+	getId = () => {
+		return this.id;
+	}
+
+	getData = () => {
 		return {};
 	}
 }

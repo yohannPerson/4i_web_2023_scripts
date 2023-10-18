@@ -1,6 +1,6 @@
-import { MainEntity } from "./mainEntity";
+import { MainEntity } from "../mainEntity";
 
-export class Tool extends MainEntity {
+export class TestEntity extends MainEntity {
 	name: string;
 	logo = null;
 

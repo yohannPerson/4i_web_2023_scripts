@@ -1,6 +1,6 @@
-import { MainEntity } from "./mainEntity";
+import { MainEntity } from "../mainEntity";
 
-export class CaseStudyType extends MainEntity{
+export class IndustryEntity extends MainEntity {
 	name: string;
 
 	constructor(name: string) {

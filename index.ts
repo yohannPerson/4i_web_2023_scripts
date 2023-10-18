@@ -26,17 +26,17 @@ const main = async () => {
 	// console.log('=== ' + testCreated + ' test created ===');
 	// console.log('=== ' + testLocalCreated + ' test local created ===');
 
-	const industriesNbCreated = await Creator.createItems(caseStudiesData.clientsIndustriesList);
-	const clientsNbCreated = await Creator.createItems(caseStudiesData.clientsList);
-	const typesNbCreated = await Creator.createItems(caseStudiesData.casesStudiesTypesList);
-	const toolsNbCreated = await Creator.createItems(caseStudiesData.toolsList);
-	const caseStudiesCreated = await Creator.createItems(caseStudiesData.casesStudiesList);
-	console.log('=== End inserting data ===');
-	console.log('=== ' + industriesNbCreated + ' industries created ===');
-	console.log('=== ' + clientsNbCreated + ' clients created ===');
-	console.log('=== ' + typesNbCreated + ' types created ===');
-	console.log('=== ' + toolsNbCreated + ' tools created ===');
-	console.log('=== ' + caseStudiesCreated + ' case studies created ===');
+	// const industriesNbCreated = await Creator.createItems(caseStudiesData.clientsIndustriesList);
+	// const clientsNbCreated = await Creator.createItems(caseStudiesData.clientsList);
+	// const typesNbCreated = await Creator.createItems(caseStudiesData.casesStudiesTypesList);
+	// const toolsNbCreated = await Creator.createItems(caseStudiesData.toolsList);
+	// const caseStudiesCreated = await Creator.createItems(caseStudiesData.casesStudiesList);
+	// console.log('=== End inserting data ===');
+	// console.log('=== ' + industriesNbCreated + ' industries created ===');
+	// console.log('=== ' + clientsNbCreated + ' clients created ===');
+	// console.log('=== ' + typesNbCreated + ' types created ===');
+	// console.log('=== ' + toolsNbCreated + ' tools created ===');
+	// console.log('=== ' + caseStudiesCreated + ' case studies created ===');
 
 	// const csvInsightsData = await Reader.readCSVFile(insightsFile);
 	// const insightsData = Extractor.parseInsightsData(csvInsightsData);

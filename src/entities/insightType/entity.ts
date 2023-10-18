@@ -1,6 +1,6 @@
-import { MainEntity } from "./mainEntity";
+import { MainEntity } from "../mainEntity";
 
-export class InsightType extends MainEntity {
+export class InsightTypeEntity extends MainEntity {
 	type: string;
 
 	constructor(type: string) {

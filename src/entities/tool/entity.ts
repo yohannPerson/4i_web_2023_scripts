@@ -1,7 +1,8 @@
-import { MainEntity } from "./mainEntity";
+import { MainEntity } from "../mainEntity";
 
-export class Industry extends MainEntity {
+export class ToolEntity extends MainEntity {
 	name: string;
+	logo = null;
 
 	constructor(name: string) {
 		super();
